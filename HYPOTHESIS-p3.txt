@@ -1,0 +1,14 @@
+mistime<-read.csv(file.choose(), header = T)
+t.test(mistime$Time,alternative="greater", mu=90)
+(TIME,8595,105,85,90,97,104,95,88,90,94,95)
+
+mistime2<-read.csv(file.choose(), header = T)
+t.test(mistime2$Time_G1, mistime2$Time_G2, alternative = "two.sided", var.equal = TRUE)
+(TIME_G1,TIME_G2,83,85,96,94,102,100,94,95,88,92,95,94,95,90)
+
+mistime3<-read.csv(file.choose(), header = T)
+t.test(mistime3$Time_Before., mistime3$Time_After, alternative = "greater", paired = TRUE)85,95,92
+(t_before,t_after,85,95,92,102,95,88,90,94,96,94,96,94,105,95,94,105,95,94,95,90)
+
+mistime2<-read.csv(file.choose(), header = T)
+t.test(mistime2$Time_G1, mistime2$Time_G2, alternative = "two.sided", var.equal = TRUE)
